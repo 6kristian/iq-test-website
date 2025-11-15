@@ -1,0 +1,12 @@
+// Force dynamic rendering - this route uses searchParams
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
+export default function ResultsLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return <>{children}</>
+}
+

@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import questionsData from '@/data/questions.json'
 
-// Force dynamic rendering
+// Force dynamic rendering - API routes should never be statically generated
 export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+export const revalidate = 0
 
 export async function GET(request: NextRequest) {
   try {

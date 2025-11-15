@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import jsPDF from 'jspdf'
@@ -22,7 +22,7 @@ interface TestResult {
   }
 }
 
-export default function ResultsPage() {
+function ResultsContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [result, setResult] = useState<TestResult | null>(null)
@@ -364,6 +364,26 @@ export default function ResultsPage() {
         </motion.div>
       </div>
     </div>
+  )
+}
+
+export default function ResultsPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gradient-blue-purple flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-white text-2xl"
+          >
+            Loading results...
+          </motion.div>
+        </div>
+      }
+    >
+      <ResultsContent />
+    </Suspense>
   )
 }
 

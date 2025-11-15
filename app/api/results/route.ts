@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server'
 import { calculateScore } from '@/lib/scoring'
 import questionsData from '@/data/questions.json'
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: NextRequest) {
   try {
     // Lazy import to avoid build-time errors

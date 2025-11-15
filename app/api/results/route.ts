@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
         totalQuestions: result.totalQuestions,
         correctAnswers: result.correctAnswers,
         timeSpent: totalTime,
-        categoryScores: result.categoryBreakdown as any,
+        categoryScores: JSON.stringify(result.categoryBreakdown),
       },
     })
 
@@ -84,7 +84,13 @@ export async function GET(request: NextRequest) {
       take: 50,
     })
 
-    return NextResponse.json({ results })
+    // Parse JSON strings back to objects
+    const parsedResults = results.map((result) => ({
+      ...result,
+      categoryScores: result.categoryScores ? JSON.parse(result.categoryScores) : {},
+    }))
+
+    return NextResponse.json({ results: parsedResults })
   } catch (error) {
     console.error('Error fetching results:', error)
     return NextResponse.json(

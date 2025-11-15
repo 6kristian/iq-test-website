@@ -20,7 +20,13 @@ export async function GET(
       )
     }
 
-    return NextResponse.json(result)
+    // Parse JSON strings back to objects
+    const parsedResult = {
+      ...result,
+      categoryScores: result.categoryScores ? JSON.parse(result.categoryScores) : {},
+    }
+
+    return NextResponse.json(parsedResult)
   } catch (error) {
     console.error('Error fetching result:', error)
     return NextResponse.json(

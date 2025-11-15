@@ -38,6 +38,7 @@ export default function ResultsPage() {
           if (response.ok) {
             const data = await response.json()
             // Convert database format to display format
+            // categoryScores is already parsed by the API route
             setResult({
               id: data.id,
               rawScore: (data.correctAnswers / data.totalQuestions) * 100,
@@ -45,7 +46,9 @@ export default function ResultsPage() {
               correctAnswers: data.correctAnswers,
               iqEstimate: data.score,
               percentile: data.percentile,
-              categoryBreakdown: data.categoryScores as any,
+              categoryBreakdown: typeof data.categoryScores === 'string' 
+                ? JSON.parse(data.categoryScores) 
+                : (data.categoryScores || {}),
             })
           }
         } catch (error) {

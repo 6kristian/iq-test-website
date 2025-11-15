@@ -18,7 +18,7 @@ model TestResult {
   totalQuestions Int
   correctAnswers Int
   timeSpent     Int      // in seconds
-  categoryScores Json    // Store category-wise performance
+  categoryScores String  @default("{}") // Store category-wise performance as JSON string
   createdAt     DateTime @default(now())
   
   @@index([createdAt])
@@ -29,7 +29,7 @@ model Question {
   type        String   // pattern, logic, spatial, math, memory
   question    String
   imageUrl    String?
-  options     Json     // Array of answer options
+  options     String   @default("[]") // Array of answer options as JSON string
   correctAnswer Int    // Index of correct answer
   difficulty  String   // easy, medium, hard
   explanation String?

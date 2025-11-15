@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
 
 export async function GET(
   request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
+    // Lazy import to avoid build-time errors
+    const { prisma } = await import('@/lib/prisma')
     const result = await prisma.testResult.findUnique({
       where: {
         id: params.id,

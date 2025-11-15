@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
 import { calculateScore } from '@/lib/scoring'
 import questionsData from '@/data/questions.json'
 
 export async function POST(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time errors
+    const { prisma } = await import('@/lib/prisma')
+    
     const body = await request.json()
     const {
       answers,
@@ -66,6 +68,9 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
+    // Lazy import to avoid build-time errors
+    const { prisma } = await import('@/lib/prisma')
+    
     const searchParams = request.nextUrl.searchParams
     const userId = searchParams.get('userId')
 

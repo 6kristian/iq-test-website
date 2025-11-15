@@ -1,0 +1,903 @@
+[
+  {
+    "id": "1",
+    "type": "pattern",
+    "question": "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46", "48"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "The pattern is n(n+1): 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, so 6×7=42"
+  },
+  {
+    "id": "2",
+    "type": "logic",
+    "question": "If all roses are flowers, and some flowers are red, which statement must be true?",
+    "options": ["All roses are red", "Some roses are red", "No roses are red", "All red things are roses", "Cannot be determined"],
+    "correctAnswer": 4,
+    "difficulty": "hard",
+    "explanation": "We cannot determine if roses are red from the given information"
+  },
+  {
+    "id": "3",
+    "type": "spatial",
+    "question": "If you fold a square piece of paper in half twice and cut a triangle in the corner, how many holes will there be when unfolded?",
+    "options": ["1", "2", "4", "8", "16"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "Folding twice creates 4 layers, so cutting once creates 4 holes"
+  },
+  {
+    "id": "4",
+    "type": "math",
+    "question": "A train travels 120 km in 2 hours. How long will it take to travel 300 km at the same speed?",
+    "options": ["4 hours", "5 hours", "6 hours", "7 hours", "8 hours"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Speed = 120/2 = 60 km/h. Time = 300/60 = 5 hours"
+  },
+  {
+    "id": "5",
+    "type": "pattern",
+    "question": "What number completes: 1, 4, 9, 16, 25, ?",
+    "options": ["30", "36", "40", "45", "49"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "These are perfect squares: 1², 2², 3², 4², 5², so next is 6² = 36"
+  },
+  {
+    "id": "6",
+    "type": "logic",
+    "question": "If Monday is the first day, what day comes 100 days after Monday?",
+    "options": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "100 mod 7 = 2, so 2 days after Monday is Wednesday"
+  },
+  {
+    "id": "7",
+    "type": "spatial",
+    "question": "How many cubes are in a 3×3×3 cube?",
+    "options": ["9", "18", "27", "36", "54"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "3 × 3 × 3 = 27 cubes"
+  },
+  {
+    "id": "8",
+    "type": "math",
+    "question": "If 3x + 5 = 20, what is x?",
+    "options": ["3", "4", "5", "6", "7"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "3x = 15, so x = 5"
+  },
+  {
+    "id": "9",
+    "type": "pattern",
+    "question": "What comes next: A, C, E, G, ?",
+    "options": ["H", "I", "J", "K", "L"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Every other letter: A, C, E, G, I"
+  },
+  {
+    "id": "10",
+    "type": "logic",
+    "question": "All cats are animals. Some animals are pets. Therefore:",
+    "options": ["All cats are pets", "Some cats are pets", "No cats are pets", "All pets are cats", "Cannot be determined"],
+    "correctAnswer": 4,
+    "difficulty": "medium",
+    "explanation": "We cannot determine if cats are pets from the given information"
+  },
+  {
+    "id": "11",
+    "type": "spatial",
+    "question": "If you rotate a square 90 degrees clockwise, how many times must you rotate it to return to the original position?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correctAnswer": 3,
+    "difficulty": "easy",
+    "explanation": "4 rotations of 90° = 360°, returning to original position"
+  },
+  {
+    "id": "12",
+    "type": "math",
+    "question": "What is 15% of 200?",
+    "options": ["20", "25", "30", "35", "40"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "15% of 200 = 0.15 × 200 = 30"
+  },
+  {
+    "id": "13",
+    "type": "pattern",
+    "question": "What comes next: 5, 10, 20, 40, ?",
+    "options": ["60", "70", "80", "90", "100"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Each number is doubled: 5×2=10, 10×2=20, 20×2=40, 40×2=80"
+  },
+  {
+    "id": "14",
+    "type": "logic",
+    "question": "If today is Wednesday, what day was it 5 days ago?",
+    "options": ["Friday", "Saturday", "Sunday", "Monday", "Tuesday"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "5 days before Wednesday is Friday"
+  },
+  {
+    "id": "15",
+    "type": "spatial",
+    "question": "How many faces does a cube have?",
+    "options": ["4", "5", "6", "7", "8"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "A cube has 6 faces"
+  },
+  {
+    "id": "16",
+    "type": "math",
+    "question": "If a rectangle has length 8 and width 5, what is its area?",
+    "options": ["13", "26", "35", "40", "45"],
+    "correctAnswer": 3,
+    "difficulty": "easy",
+    "explanation": "Area = length × width = 8 × 5 = 40"
+  },
+  {
+    "id": "17",
+    "type": "pattern",
+    "question": "What comes next: 1, 3, 6, 10, 15, ?",
+    "options": ["18", "20", "21", "24", "25"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "Triangular numbers: +2, +3, +4, +5, so +6 = 21"
+  },
+  {
+    "id": "18",
+    "type": "logic",
+    "question": "If all birds can fly, and penguins are birds, then:",
+    "options": ["Penguins can fly", "Penguins cannot fly", "Some birds cannot fly", "The premise is false", "Cannot be determined"],
+    "correctAnswer": 3,
+    "difficulty": "hard",
+    "explanation": "The premise 'all birds can fly' is false, as penguins are birds that cannot fly"
+  },
+  {
+    "id": "19",
+    "type": "spatial",
+    "question": "How many edges does a cube have?",
+    "options": ["8", "10", "12", "14", "16"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "A cube has 12 edges"
+  },
+  {
+    "id": "20",
+    "type": "math",
+    "question": "What is the square root of 144?",
+    "options": ["10", "11", "12", "13", "14"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "12 × 12 = 144, so √144 = 12"
+  },
+  {
+    "id": "21",
+    "type": "pattern",
+    "question": "What comes next: 2, 5, 11, 23, 47, ?",
+    "options": ["89", "91", "93", "95", "97"],
+    "correctAnswer": 2,
+    "difficulty": "hard",
+    "explanation": "Pattern: 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47, so 47×2+1=95"
+  },
+  {
+    "id": "22",
+    "type": "logic",
+    "question": "If A > B and B > C, then:",
+    "options": ["A > C", "A < C", "A = C", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "Transitive property: if A > B and B > C, then A > C"
+  },
+  {
+    "id": "23",
+    "type": "spatial",
+    "question": "How many vertices does a cube have?",
+    "options": ["6", "8", "10", "12", "14"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "A cube has 8 vertices (corners)"
+  },
+  {
+    "id": "24",
+    "type": "math",
+    "question": "What is 25% of 80?",
+    "options": ["15", "20", "25", "30", "35"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "25% of 80 = 0.25 × 80 = 20"
+  },
+  {
+    "id": "25",
+    "type": "pattern",
+    "question": "What comes next: 1, 4, 9, 16, 25, 36, ?",
+    "options": ["42", "45", "49", "52", "56"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Perfect squares: 1², 2², 3², 4², 5², 6², so next is 7² = 49"
+  },
+  {
+    "id": "26",
+    "type": "logic",
+    "question": "If it rains, I bring an umbrella. I did not bring an umbrella. Therefore:",
+    "options": ["It rained", "It did not rain", "I forgot my umbrella", "Cannot be determined", "None of the above"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "Contrapositive: if no umbrella, then it did not rain"
+  },
+  {
+    "id": "27",
+    "type": "spatial",
+    "question": "If you cut a cube with a plane, which shape cannot be the cross-section?",
+    "options": ["Triangle", "Square", "Pentagon", "Hexagon", "Circle"],
+    "correctAnswer": 4,
+    "difficulty": "hard",
+    "explanation": "A plane cutting a cube cannot create a circle"
+  },
+  {
+    "id": "28",
+    "type": "math",
+    "question": "If x + y = 10 and x - y = 4, what is x?",
+    "options": ["5", "6", "7", "8", "9"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "Adding equations: 2x = 14, so x = 7"
+  },
+  {
+    "id": "29",
+    "type": "pattern",
+    "question": "What comes next: 0, 1, 1, 2, 3, 5, 8, ?",
+    "options": ["11", "12", "13", "14", "15"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "Fibonacci sequence: each number is sum of previous two, so 5+8=13"
+  },
+  {
+    "id": "30",
+    "type": "logic",
+    "question": "All doctors are educated. Some educated people are rich. Therefore:",
+    "options": ["All doctors are rich", "Some doctors are rich", "No doctors are rich", "All rich people are doctors", "Cannot be determined"],
+    "correctAnswer": 4,
+    "difficulty": "hard",
+    "explanation": "We cannot determine if doctors are rich from the given information"
+  },
+  {
+    "id": "31",
+    "type": "spatial",
+    "question": "How many sides does a hexagon have?",
+    "options": ["4", "5", "6", "7", "8"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Hexagon means 6 sides"
+  },
+  {
+    "id": "32",
+    "type": "math",
+    "question": "What is 3³?",
+    "options": ["9", "18", "27", "36", "45"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "3³ = 3 × 3 × 3 = 27"
+  },
+  {
+    "id": "33",
+    "type": "pattern",
+    "question": "What comes next: 8, 4, 2, 1, 0.5, ?",
+    "options": ["0.25", "0.3", "0.35", "0.4", "0.45"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "Each number is halved: 8÷2=4, 4÷2=2, 2÷2=1, 1÷2=0.5, 0.5÷2=0.25"
+  },
+  {
+    "id": "34",
+    "type": "logic",
+    "question": "If all students study, and John is a student, then:",
+    "options": ["John studies", "John does not study", "John might study", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "If all students study and John is a student, then John studies"
+  },
+  {
+    "id": "35",
+    "type": "spatial",
+    "question": "How many degrees in a right angle?",
+    "options": ["45", "60", "90", "120", "180"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "A right angle is 90 degrees"
+  },
+  {
+    "id": "36",
+    "type": "math",
+    "question": "What is the average of 10, 20, and 30?",
+    "options": ["15", "20", "25", "30", "35"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Average = (10+20+30)/3 = 60/3 = 20"
+  },
+  {
+    "id": "37",
+    "type": "pattern",
+    "question": "What comes next: Z, Y, X, W, V, ?",
+    "options": ["T", "U", "V", "W", "X"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "Alphabet backwards: Z, Y, X, W, V, U"
+  },
+  {
+    "id": "38",
+    "type": "logic",
+    "question": "If A implies B, and B implies C, then:",
+    "options": ["A implies C", "C implies A", "A equals C", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "explanation": "Transitive property: if A→B and B→C, then A→C"
+  },
+  {
+    "id": "39",
+    "type": "spatial",
+    "question": "How many dimensions does a point have?",
+    "options": ["0", "1", "2", "3", "4"],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "explanation": "A point has zero dimensions"
+  },
+  {
+    "id": "40",
+    "type": "math",
+    "question": "What is 2⁴?",
+    "options": ["8", "12", "16", "20", "24"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "2⁴ = 2 × 2 × 2 × 2 = 16"
+  },
+  {
+    "id": "41",
+    "type": "pattern",
+    "question": "What comes next: 3, 6, 12, 24, 48, ?",
+    "options": ["84", "90", "96", "102", "108"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Each number is doubled: 3×2=6, 6×2=12, 12×2=24, 24×2=48, 48×2=96"
+  },
+  {
+    "id": "42",
+    "type": "logic",
+    "question": "If no cats are dogs, and Fluffy is a cat, then:",
+    "options": ["Fluffy is a dog", "Fluffy is not a dog", "Fluffy might be a dog", "Cannot be determined", "None of the above"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "If no cats are dogs and Fluffy is a cat, then Fluffy is not a dog"
+  },
+  {
+    "id": "43",
+    "type": "spatial",
+    "question": "How many sides does a triangle have?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "A triangle has 3 sides"
+  },
+  {
+    "id": "44",
+    "type": "math",
+    "question": "What is 50% of 100?",
+    "options": ["40", "45", "50", "55", "60"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "50% of 100 = 0.5 × 100 = 50"
+  },
+  {
+    "id": "45",
+    "type": "pattern",
+    "question": "What comes next: 1, 8, 27, 64, ?",
+    "options": ["100", "125", "144", "169", "196"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "Cubes: 1³=1, 2³=8, 3³=27, 4³=64, so 5³=125"
+  },
+  {
+    "id": "46",
+    "type": "logic",
+    "question": "If it is Monday, then I go to work. I did not go to work. Therefore:",
+    "options": ["It is Monday", "It is not Monday", "I am sick", "Cannot be determined", "None of the above"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "Contrapositive: if no work, then it is not Monday"
+  },
+  {
+    "id": "47",
+    "type": "spatial",
+    "question": "How many right angles does a rectangle have?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "A rectangle has 4 right angles"
+  },
+  {
+    "id": "48",
+    "type": "math",
+    "question": "What is 7 × 8?",
+    "options": ["48", "52", "56", "60", "64"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "7 × 8 = 56"
+  },
+  {
+    "id": "49",
+    "type": "pattern",
+    "question": "What comes next: 100, 81, 64, 49, 36, ?",
+    "options": ["25", "24", "23", "22", "21"],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "explanation": "Perfect squares descending: 10²=100, 9²=81, 8²=64, 7²=49, 6²=36, so 5²=25"
+  },
+  {
+    "id": "50",
+    "type": "logic",
+    "question": "All apples are fruits. Some fruits are red. Therefore:",
+    "options": ["All apples are red", "Some apples are red", "No apples are red", "All red things are apples", "Cannot be determined"],
+    "correctAnswer": 4,
+    "difficulty": "hard",
+    "explanation": "We cannot determine if apples are red from the given information"
+  },
+  {
+    "id": "51",
+    "type": "spatial",
+    "question": "How many parallel sides does a square have?",
+    "options": ["2", "4", "6", "8", "Infinite"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "A square has 2 pairs of parallel sides (4 sides total, 2 pairs)"
+  },
+  {
+    "id": "52",
+    "type": "math",
+    "question": "What is 144 ÷ 12?",
+    "options": ["10", "11", "12", "13", "14"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "144 ÷ 12 = 12"
+  },
+  {
+    "id": "53",
+    "type": "pattern",
+    "question": "What comes next: 2, 6, 18, 54, ?",
+    "options": ["144", "162", "180", "198", "216"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "Each number is multiplied by 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162"
+  },
+  {
+    "id": "54",
+    "type": "logic",
+    "question": "If all roses are flowers, and this is a rose, then:",
+    "options": ["This is a flower", "This is not a flower", "This might be a flower", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "If all roses are flowers and this is a rose, then this is a flower"
+  },
+  {
+    "id": "55",
+    "type": "spatial",
+    "question": "How many degrees in a straight line?",
+    "options": ["90", "120", "150", "180", "360"],
+    "correctAnswer": 3,
+    "difficulty": "easy",
+    "explanation": "A straight line forms a 180-degree angle"
+  },
+  {
+    "id": "56",
+    "type": "math",
+    "question": "What is 15 + 25?",
+    "options": ["35", "40", "45", "50", "55"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "15 + 25 = 40"
+  },
+  {
+    "id": "57",
+    "type": "pattern",
+    "question": "What comes next: 1, 2, 4, 8, 16, ?",
+    "options": ["24", "28", "32", "36", "40"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Powers of 2: 2⁰=1, 2¹=2, 2²=4, 2³=8, 2⁴=16, so 2⁵=32"
+  },
+  {
+    "id": "58",
+    "type": "logic",
+    "question": "If A = B and B = C, then:",
+    "options": ["A = C", "A ≠ C", "A > C", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "Transitive property: if A=B and B=C, then A=C"
+  },
+  {
+    "id": "59",
+    "type": "spatial",
+    "question": "How many faces does a pyramid with a square base have?",
+    "options": ["4", "5", "6", "7", "8"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "A square pyramid has 5 faces: 1 square base + 4 triangular sides"
+  },
+  {
+    "id": "60",
+    "type": "math",
+    "question": "What is 9 × 9?",
+    "options": ["72", "81", "90", "99", "108"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "9 × 9 = 81"
+  },
+  {
+    "id": "61",
+    "type": "pattern",
+    "question": "What comes next: 10, 20, 30, 40, 50, ?",
+    "options": ["55", "60", "65", "70", "75"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Adding 10 each time: 10, 20, 30, 40, 50, 60"
+  },
+  {
+    "id": "62",
+    "type": "logic",
+    "question": "If some birds can fly, and eagles are birds, then:",
+    "options": ["Eagles can fly", "Eagles cannot fly", "Some eagles can fly", "Cannot be determined", "None of the above"],
+    "correctAnswer": 3,
+    "difficulty": "hard",
+    "explanation": "We cannot determine if eagles can fly from 'some birds can fly'"
+  },
+  {
+    "id": "63",
+    "type": "spatial",
+    "question": "How many sides does a pentagon have?",
+    "options": ["3", "4", "5", "6", "7"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Pentagon means 5 sides"
+  },
+  {
+    "id": "64",
+    "type": "math",
+    "question": "What is 100 - 37?",
+    "options": ["61", "62", "63", "64", "65"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "100 - 37 = 63"
+  },
+  {
+    "id": "65",
+    "type": "pattern",
+    "question": "What comes next: 7, 14, 21, 28, 35, ?",
+    "options": ["40", "42", "44", "46", "48"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Multiples of 7: 7×1=7, 7×2=14, 7×3=21, 7×4=28, 7×5=35, so 7×6=42"
+  },
+  {
+    "id": "66",
+    "type": "logic",
+    "question": "If it is sunny, I go to the beach. I went to the beach. Therefore:",
+    "options": ["It was sunny", "It was not sunny", "It might have been sunny", "Cannot be determined", "None of the above"],
+    "correctAnswer": 3,
+    "difficulty": "hard",
+    "explanation": "Going to the beach doesn't necessarily mean it was sunny (converse error)"
+  },
+  {
+    "id": "67",
+    "type": "spatial",
+    "question": "How many dimensions does a line have?",
+    "options": ["0", "1", "2", "3", "4"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "A line has one dimension (length)"
+  },
+  {
+    "id": "68",
+    "type": "math",
+    "question": "What is 6 × 7?",
+    "options": ["40", "42", "44", "46", "48"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "6 × 7 = 42"
+  },
+  {
+    "id": "69",
+    "type": "pattern",
+    "question": "What comes next: 11, 22, 33, 44, 55, ?",
+    "options": ["60", "66", "72", "78", "84"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Multiples of 11: 11×1=11, 11×2=22, 11×3=33, 11×4=44, 11×5=55, so 11×6=66"
+  },
+  {
+    "id": "70",
+    "type": "logic",
+    "question": "If all dogs bark, and Fido is a dog, then:",
+    "options": ["Fido barks", "Fido does not bark", "Fido might bark", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "If all dogs bark and Fido is a dog, then Fido barks"
+  },
+  {
+    "id": "71",
+    "type": "spatial",
+    "question": "How many degrees in a full circle?",
+    "options": ["180", "270", "360", "450", "540"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "A full circle has 360 degrees"
+  },
+  {
+    "id": "72",
+    "type": "math",
+    "question": "What is 8²?",
+    "options": ["56", "60", "64", "68", "72"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "8² = 8 × 8 = 64"
+  },
+  {
+    "id": "73",
+    "type": "pattern",
+    "question": "What comes next: 1, 3, 9, 27, 81, ?",
+    "options": ["243", "250", "256", "270", "300"],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "explanation": "Powers of 3: 3⁰=1, 3¹=3, 3²=9, 3³=27, 3⁴=81, so 3⁵=243"
+  },
+  {
+    "id": "74",
+    "type": "logic",
+    "question": "If A and B, then C. A is true. B is false. Therefore:",
+    "options": ["C is true", "C is false", "C might be true", "Cannot be determined", "None of the above"],
+    "correctAnswer": 3,
+    "difficulty": "hard",
+    "explanation": "If B is false, the condition 'A and B' is false, so we cannot determine C"
+  },
+  {
+    "id": "75",
+    "type": "spatial",
+    "question": "How many dimensions does a plane have?",
+    "options": ["0", "1", "2", "3", "4"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "A plane has two dimensions (length and width)"
+  },
+  {
+    "id": "76",
+    "type": "math",
+    "question": "What is 5 × 12?",
+    "options": ["55", "60", "65", "70", "75"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "5 × 12 = 60"
+  },
+  {
+    "id": "77",
+    "type": "pattern",
+    "question": "What comes next: 4, 9, 16, 25, 36, 49, ?",
+    "options": ["60", "64", "68", "72", "81"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "Perfect squares: 2²=4, 3²=9, 4²=16, 5²=25, 6²=36, 7²=49, so 8²=64"
+  },
+  {
+    "id": "78",
+    "type": "logic",
+    "question": "If either A or B, then C. A is true. Therefore:",
+    "options": ["C is true", "C is false", "C might be true", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "explanation": "If A is true, then 'A or B' is true, so C is true"
+  },
+  {
+    "id": "79",
+    "type": "spatial",
+    "question": "How many edges does a triangle have?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "A triangle has 3 edges (sides)"
+  },
+  {
+    "id": "80",
+    "type": "math",
+    "question": "What is 20% of 150?",
+    "options": ["25", "30", "35", "40", "45"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "20% of 150 = 0.2 × 150 = 30"
+  },
+  {
+    "id": "81",
+    "type": "memory",
+    "question": "Remember this sequence: 7, 3, 9, 1, 5. What was the third number?",
+    "options": ["1", "3", "5", "7", "9"],
+    "correctAnswer": 4,
+    "difficulty": "easy",
+    "explanation": "The third number in the sequence 7, 3, 9, 1, 5 is 9"
+  },
+  {
+    "id": "82",
+    "type": "memory",
+    "question": "If you saw the word 'ELEPHANT' earlier, what was the 4th letter?",
+    "options": ["E", "H", "L", "P", "A"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "E-L-E-P-H-A-N-T, the 4th letter is P"
+  },
+  {
+    "id": "83",
+    "type": "memory",
+    "question": "Remember: Apple, Banana, Cherry. Which fruit was mentioned second?",
+    "options": ["Apple", "Banana", "Cherry", "None", "Cannot recall"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "The second fruit in the sequence is Banana"
+  },
+  {
+    "id": "84",
+    "type": "memory",
+    "question": "If the pattern was: Red, Blue, Green, Yellow. What color came third?",
+    "options": ["Red", "Blue", "Green", "Yellow", "Orange"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "The third color in Red, Blue, Green, Yellow is Green"
+  },
+  {
+    "id": "85",
+    "type": "memory",
+    "question": "Remember the number: 2847. What is the sum of the first and last digits?",
+    "options": ["8", "9", "10", "11", "12"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "First digit is 2, last digit is 7, sum = 2 + 7 = 9"
+  },
+  {
+    "id": "86",
+    "type": "pattern",
+    "question": "What comes next: 13, 17, 19, 23, 29, ?",
+    "options": ["31", "33", "35", "37", "39"],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "explanation": "Prime numbers: 13, 17, 19, 23, 29, so next is 31"
+  },
+  {
+    "id": "87",
+    "type": "logic",
+    "question": "If all teachers are educated, and some educated people are wealthy, then:",
+    "options": ["All teachers are wealthy", "Some teachers are wealthy", "No teachers are wealthy", "All wealthy people are teachers", "Cannot be determined"],
+    "correctAnswer": 4,
+    "difficulty": "hard",
+    "explanation": "We cannot determine if teachers are wealthy from the given information"
+  },
+  {
+    "id": "88",
+    "type": "spatial",
+    "question": "If you rotate a triangle 120 degrees, how many times must you rotate it to return to original?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "3 rotations of 120° = 360°, returning to original position"
+  },
+  {
+    "id": "89",
+    "type": "math",
+    "question": "What is the area of a circle with radius 5? (Use π ≈ 3.14)",
+    "options": ["62.8", "78.5", "94.2", "125.6", "157"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "explanation": "Area = πr² = 3.14 × 5² = 3.14 × 25 = 78.5"
+  },
+  {
+    "id": "90",
+    "type": "pattern",
+    "question": "What comes next: 1, 5, 13, 29, 61, ?",
+    "options": ["115", "125", "135", "145", "155"],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "explanation": "Pattern: 1×2+3=5, 5×2+3=13, 13×2+3=29, 29×2+3=61, so 61×2+3=125"
+  },
+  {
+    "id": "91",
+    "type": "memory",
+    "question": "Remember: Dog, Cat, Bird, Fish. Which animal was mentioned first?",
+    "options": ["Dog", "Cat", "Bird", "Fish", "None"],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "explanation": "The first animal in the sequence is Dog"
+  },
+  {
+    "id": "92",
+    "type": "logic",
+    "question": "If it is not Monday, then I don't work. I am working. Therefore:",
+    "options": ["It is Monday", "It is not Monday", "It might be Monday", "Cannot be determined", "None of the above"],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "explanation": "Contrapositive: if working, then it is Monday"
+  },
+  {
+    "id": "93",
+    "type": "spatial",
+    "question": "How many faces does a tetrahedron have?",
+    "options": ["3", "4", "5", "6", "7"],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "explanation": "A tetrahedron has 4 triangular faces"
+  },
+  {
+    "id": "94",
+    "type": "math",
+    "question": "What is 12 × 11?",
+    "options": ["120", "128", "132", "140", "144"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "explanation": "12 × 11 = 132"
+  },
+  {
+    "id": "95",
+    "type": "pattern",
+    "question": "What comes next: 2, 4, 8, 16, 32, 64, ?",
+    "options": ["96", "112", "128", "144", "160"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "Powers of 2: 2¹=2, 2²=4, 2³=8, 2⁴=16, 2⁵=32, 2⁶=64, so 2⁷=128"
+  },
+  {
+    "id": "96",
+    "type": "memory",
+    "question": "Remember the sequence: 4, 8, 2, 6, 10. What was the middle number?",
+    "options": ["2", "4", "6", "8", "10"],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "explanation": "The middle (3rd) number in 4, 8, 2, 6, 10 is 2"
+  },
+  {
+    "id": "97",
+    "type": "logic",
+    "question": "If A > 5 and B < 3, and A + B = 8, then:",
+    "options": ["A = 6, B = 2", "A = 7, B = 1", "Cannot be determined", "No solution", "Multiple solutions"],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "explanation": "A > 5, B < 3, A + B = 8. If A = 6, B = 2 (but B < 3, so B = 2 works). If A = 7, B = 1 works. Multiple solutions possible."
+  },
+  {
+    "id": "98",
+    "type": "spatial",
+    "question": "How many vertices does a triangle have?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "explanation": "A triangle has 3 vertices (corners)"
+  },
+  {
+    "id": "99",
+    "type": "math",
+    "question": "What is 144 ÷ 6?",
+    "options": ["20", "22", "24", "26", "28"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "explanation": "144 ÷ 6 = 24"
+  },
+  {
+    "id": "100",
+    "type": "pattern",
+    "question": "What comes next: 1, 1, 2, 3, 5, 8, 13, ?",
+    "options": ["18", "19", "20", "21", "22"],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "explanation": "Fibonacci: each number is sum of previous two, so 8+13=21"
+  }
+]
+

@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model TestResult {
+  id            String   @id @default(cuid())
+  userId        String?  // Optional: for future user authentication
+  score         Int
+  percentile    Float
+  totalQuestions Int
+  correctAnswers Int
+  timeSpent     Int      // in seconds
+  categoryScores Json    // Store category-wise performance
+  createdAt     DateTime @default(now())
+  
+  @@index([createdAt])
+}
+
+model Question {
+  id          String   @id @default(cuid())
+  type        String   // pattern, logic, spatial, math, memory
+  question    String
+  imageUrl    String?
+  options     Json     // Array of answer options
+  correctAnswer Int    // Index of correct answer
+  difficulty  String   // easy, medium, hard
+  explanation String?
+  createdAt   DateTime @default(now())
+}
+

@@ -168,7 +168,18 @@ IQ scores are estimated based on:
 
 ### Vercel (Recommended)
 
-1. **Push to GitHub**
+**Important**: SQLite does NOT work on Vercel (serverless functions). You MUST use PostgreSQL or another cloud database.
+
+1. **Set up a Database**
+   - Use [Vercel Postgres](https://vercel.com/storage/postgres) (recommended)
+   - Or use [Supabase](https://supabase.com), [Neon](https://neon.tech), or [PlanetScale](https://planetscale.com)
+   - Get your connection string (e.g., `postgresql://user:pass@host:5432/dbname`)
+
+2. **Update Prisma Schema**
+   - Change `provider = "sqlite"` to `provider = "postgresql"` in `prisma/schema.prisma`
+   - Update `DATABASE_URL` format
+
+3. **Push to GitHub**
 
 ```bash
 git init
@@ -178,17 +189,18 @@ git remote add origin <your-repo-url>
 git push -u origin main
 ```
 
-2. **Deploy to Vercel**
+4. **Deploy to Vercel**
    - Go to [vercel.com](https://vercel.com)
    - Import your GitHub repository
    - Vercel will auto-detect Next.js
-   - Add environment variable: `DATABASE_URL`
+   - Add environment variable: `DATABASE_URL` (your PostgreSQL connection string)
+   - The build will automatically run `prisma generate` (via postinstall script)
    - Deploy!
 
-3. **For Production Database**
-   - Use PostgreSQL (recommended) or MongoDB
-   - Update `DATABASE_URL` in Vercel environment variables
-   - Run `npm run db:push` after deployment
+5. **Run Migrations**
+   - After first deployment, you may need to run migrations
+   - Use Vercel CLI: `vercel env pull` then `npx prisma db push`
+   - Or use Prisma Migrate: `npx prisma migrate deploy`
 
 ### Other Platforms
 
